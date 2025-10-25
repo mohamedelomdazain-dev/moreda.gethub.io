@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Reda Zain | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ---------- Base Styles ---------- */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      color: #f5f6fa;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #4b0082, #007bff);
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: 1px;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #dcdde1;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #a29bfe;
+      border-left: 5px solid #6c5ce7;
+      padding-left: 10px;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #dcdde1;
+      font-size: 17px;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill, .project {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 calc(33% - 20px);
+      box-sizing: border-box;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .skill:hover, .project:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: #aaa;
+      padding: 25px;
+      margin-top: 60px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- Social Media ---------- */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      font-size: 28px;
+      color: white;
+      background: linear-gradient(135deg, #6c5ce7, #00a8ff);
+      padding: 15px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .social-links a:hover {
+      transform: scale(1.15) rotate(8deg);
+      box-shadow: 0 0 20px rgba(108, 92, 231, 0.6);
+    }
+
+    /* Specific Colors for each platform */
+    .social-links a.instagram { background: linear-gradient(135deg, #e1306c, #c13584, #833ab4); }
+    .social-links a.whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
+    .social-links a.facebook { background: linear-gradient(135deg, #1877f2, #3b5998); }
+
+    @media (max-width: 768px) {
+      .skill, .project {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mohamed Reda Zain</h1>
+    <p>Web Developer | UI/UX Designer | Creative Thinker</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Mohamed Reza Zain</strong>, a passionate web developer and designer.
+      I love creating elegant, user-friendly websites that blend design and performance perfectly.
+      Always learning, always growing.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Personal Website</h3>
+        <p>A modern and responsive portfolio website built using HTML and CSS.</p>
+      </div>
+      <div class="project">
+        <h3>To-Do App</h3>
+        <p>A web-based task manager app built with JavaScript and Local Storage.</p>
+      </div>
+      <div class="project">
+        <h3>Landing Page</h3>
+        <p>A creative animated landing page designed for startups and brands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! You can find me on these platforms:</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/mohamed_.elkady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/0201110051841" class="whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https:" class="facebook" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mohamed Reza Zain - All Rights Reserved
+  </footer>
+</body>
+</html>
